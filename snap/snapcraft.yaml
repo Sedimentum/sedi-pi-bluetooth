@@ -5,7 +5,7 @@ description: |
   Confined snap meant to enable bluetooth on RPi devices on Ubuntu Core systems
 grade: stable
 confinement: strict
-base: core18
+base: core22
 architectures:
   - build-on: armhf
   - build-on: arm64
