@@ -1,0 +1,6 @@
+[submodule "deps/SedimentumSnapUtils"]
+	path = deps/SedimentumSnapUtils
+	url = git@github.com:Sedimentum/SedimentumSnapUtils.git
+[submodule "deps/SedimentumUtils"]
+	path = deps/SedimentumUtils
+	url = git@github.com:Sedimentum/SedimentumUtils.git

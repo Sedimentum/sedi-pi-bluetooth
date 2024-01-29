@@ -1,14 +1,11 @@
-name: pi-bluetooth
+name: sedi-pi-bluetooth
 version: '1.2'
 summary: Setup Bluetooth on Raspberry Pi running Ubuntu Core
 description: |
   Confined snap meant to enable bluetooth on RPi devices on Ubuntu Core systems
+base: core20
 grade: stable
 confinement: strict
-base: core22
-architectures:
-  - build-on: armhf
-  - build-on: arm64
 
 apps:
   btuart:
@@ -37,8 +34,8 @@ parts:
     source: dump
   bluez:
     plugin: nil
-    stage-snaps: 
-      - bluez
+    stage-snaps:
+      - bluez/20/stable
     prime:
       - usr/bin/hciconfig
       - usr/bin/hcidump
